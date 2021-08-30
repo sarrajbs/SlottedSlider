@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SlottedSlider<V>: View where V : BinaryFloatingPoint {
+public struct SlottedSlider<V>: View where V : BinaryFloatingPoint {
 
     // MARK: - Value
     // MARK: Private
@@ -29,7 +29,7 @@ struct SlottedSlider<V>: View where V : BinaryFloatingPoint {
     var trackColor = Color(red: 241/255, green: 110/255, blue: 0)
 
     // MARK: - Initializer
-    init(value: Binding<V>, in bounds: ClosedRange<V>, slotNumber: Int = 0, onEditingChanged: @escaping (Bool) -> Void) {
+    public init(value: Binding<V>, in bounds: ClosedRange<V>, slotNumber: Int = 0, onEditingChanged: @escaping (Bool) -> Void) {
         _value  = value
     
         self.bounds = bounds
@@ -40,7 +40,7 @@ struct SlottedSlider<V>: View where V : BinaryFloatingPoint {
 
     // MARK: - View
     // MARK: Public
-    var body: some View {
+    public var body: some View {
         GeometryReader { proxy in
             ZStack(alignment: .leading) {
                 // Track
