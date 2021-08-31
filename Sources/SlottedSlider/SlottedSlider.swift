@@ -20,7 +20,7 @@ public struct SlottedSlider<V>: View where V : BinaryFloatingPoint {
     @State private var ratio: CGFloat   = 0
     @State private var startX: CGFloat? = nil
 
-    private let heightTrack: CGFloat = 4.0
+    private let heightTrack: CGFloat = 3.0
     private let slotNumber: Int
     private let onEditing: (Bool) -> Void
     
