@@ -20,12 +20,12 @@ public struct SlottedSlider<V>: View where V : BinaryFloatingPoint {
     @State private var ratio: CGFloat   = 0
     @State private var startX: CGFloat? = nil
 
-    private let heightTrack: CGFloat = 2.0
+    private let heightTrack: CGFloat = 4.0
     private let slotNumber: Int
     private let onEditing: (Bool) -> Void
     
     // MARK: - preferred Colors
-    var trackBgColor = Color(red: 241/255, green: 110/255, blue: 0).opacity(0.6)
+    var trackBgColor = Color(red: 241/255, green: 110/255, blue: 0).opacity(0.4)
     var trackColor = Color(red: 241/255, green: 110/255, blue: 0)
 
     // MARK: - Initializer
